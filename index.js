@@ -174,9 +174,9 @@ function Redis(config) {
     this.options = {
         db: config.db || 0,
         password: config.password,
-        tls: config.tls,
+        tls: config.tls
         //Do not try to reconnect, throw an error
-        retry_strategy: () => undefined
+        // retry_strategy: () => undefined
     };
     this.client = null;
     this.knownCircularRefs = {};
